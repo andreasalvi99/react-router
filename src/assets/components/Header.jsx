@@ -1,13 +1,13 @@
 export default function Header() {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
         <img
           src="https://png.pngtree.com/png-clipart/20250416/original/pngtree-clothing-store-png-image_20700949.png"
           alt=""
         />
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -15,29 +15,29 @@ export default function Header() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">
                 Home
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Link
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                About us
               </a>
             </li>
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <a
-                class="nav-link"
+                className="nav-link"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Products
               </a>
             </li>
           </ul>

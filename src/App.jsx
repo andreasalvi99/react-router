@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./assets/components/Header";
 import HomePage from "./assets/components/pages/HomePage";
 import AboutUs from "./assets/components/pages/AboutUs";
+import Products from "./assets/components/pages/Products";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Header />
       <HomePage />
       <AboutUs />
+      <Products />
     </>
   );
 }
