@@ -1,17 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./assets/components/Header";
-import HomePage from "./assets/components/pages/HomePage";
-import AboutUs from "./assets/components/pages/AboutUs";
-import Products from "./assets/components/pages/Products";
+import Header from "./components/Header";
+import HomePage from "./pages/HomePage";
+import AboutUs from "./pages/AboutUs";
+import Products from "./pages/Products";
 
 export default function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route></Route>
-          <Route></Route>
-          <Route></Route>
+          <Route path="/" Component={HomePage} />
+          <Route path="/about-us" Component={AboutUs}></Route>
+          <Route path="/Products" Component={Products}></Route>
         </Routes>
       </BrowserRouter>
     </>
