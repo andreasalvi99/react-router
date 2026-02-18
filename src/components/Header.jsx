@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-secondary">
       <div className="container-fluid">
         <img
           src="https://png.pngtree.com/png-clipart/20250416/original/pngtree-clothing-store-png-image_20700949.png"
@@ -23,31 +23,18 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              {/* <a className="nav-link active" aria-current="page" href="#">
-                Home
-              </a> */}
               <NavLink to="/" className="nav-link">
-                Home
+                <span className="fs-5">Home</span>
               </NavLink>
             </li>
             <li className="nav-item">
-              {/* <a className="nav-link" href="#">
-                About us
-              </a> */}
               <NavLink to="/about-us" className="nav-link">
-                About us
+                <span className="fs-5">About us</span>
               </NavLink>
             </li>
             <li className="nav-item dropdown">
-              {/* <a
-                className="nav-link"
-                href="#"
-                
-              >
-                Products
-              </a> */}
               <NavLink to="/products" className="nav-link">
-                Products
+                <span className="fs-5">Products</span>
               </NavLink>
             </li>
           </ul>

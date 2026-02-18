@@ -12,7 +12,7 @@ export default function Products() {
   }, []);
 
   return (
-    <div className="row row-cols-5 g-4">
+    <div className="row row-cols-5 g-0">
       {products.map((product) => {
         return (
           <div key={product.id} className="col">
