@@ -7,10 +7,13 @@ import Products from "./assets/components/pages/Products";
 export default function App() {
   return (
     <>
-      <Header />
-      <HomePage />
-      <AboutUs />
-      <Products />
+      <BrowserRouter>
+        <Routes>
+          <Route></Route>
+          <Route></Route>
+          <Route></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
