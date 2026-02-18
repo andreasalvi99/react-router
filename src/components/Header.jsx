@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-secondary">
+    <nav className="navbar navbar-expand-lg bg-body">
       <div className="container-fluid">
         <img
           src="https://png.pngtree.com/png-clipart/20250416/original/pngtree-clothing-store-png-image_20700949.png"
