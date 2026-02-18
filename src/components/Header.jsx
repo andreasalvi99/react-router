@@ -7,6 +7,7 @@ export default function Header() {
         <img
           src="https://png.pngtree.com/png-clipart/20250416/original/pngtree-clothing-store-png-image_20700949.png"
           alt=""
+          className="navbar-logo"
         />
         <button
           className="navbar-toggler"
@@ -25,7 +26,7 @@ export default function Header() {
               {/* <a className="nav-link active" aria-current="page" href="#">
                 Home
               </a> */}
-              <NavLink to="/" className="nav-link active">
+              <NavLink to="/" className="nav-link">
                 Home
               </NavLink>
             </li>

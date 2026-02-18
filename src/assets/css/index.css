@@ -1,4 +1,31 @@
-img {
+.navbar-logo {
   height: 50px;
   width: 50px;
+}
+
+body {
+  background-image: url(https://www.marinaromea.it/wp-content/uploads/2018/07/Sporting-Shop-1.jpg);
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  position: relative;
+  color: rgb(255, 255, 255, 0.8);
+  z-index: 1;
+  letter-spacing: 3px;
+  line-height: 48px;
 }
