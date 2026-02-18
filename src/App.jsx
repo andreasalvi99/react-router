@@ -1,11 +1,12 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./assets/components/Header";
+import HomePage from "./assets/components/pages/HomePage";
+
 export default function App() {
   return (
     <>
-      <section>
-        <div className="container text-center">
-          <h1>CIAOOOO</h1>
-        </div>
-      </section>
+      <Header />
+      <HomePage />
     </>
   );
 }
