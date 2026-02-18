@@ -12,11 +12,13 @@ export default function Products() {
   }, []);
 
   return (
-    <div className="row row-cols-4 g-3">
+    <div className="row row-cols-4 g-4">
       {products.map((product) => {
         return (
           <div key={product.div} className="col-lg-3 col-md-6 col-sm-12 ">
-            <img src={product.image} alt="" />
+            <figure>
+              <img src={product.image} alt="" />
+            </figure>
           </div>
         );
       })}
