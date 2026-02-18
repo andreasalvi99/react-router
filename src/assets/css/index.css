@@ -30,3 +30,21 @@ body::before {
   letter-spacing: 3px;
   line-height: 48px;
 }
+
+.card {
+  height: 600px;
+}
+
+.product-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.img-container {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
