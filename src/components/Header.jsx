@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -20,25 +22,32 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              {/* <a className="nav-link active" aria-current="page" href="#">
                 Home
-              </a>
+              </a> */}
+              <NavLink to="/" className="nav-link active">
+                Home
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              {/* <a className="nav-link" href="#">
                 About us
-              </a>
+              </a> */}
+              <NavLink to="/about-us" className="nav-link">
+                About us
+              </NavLink>
             </li>
             <li className="nav-item dropdown">
-              <a
+              {/* <a
                 className="nav-link"
                 href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                
               >
                 Products
-              </a>
+              </a> */}
+              <NavLink to="/products" className="nav-link">
+                Products
+              </NavLink>
             </li>
           </ul>
         </div>
