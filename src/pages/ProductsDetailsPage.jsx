@@ -17,11 +17,6 @@ export default function ProductsDetailsPage() {
 
   useEffect(fetchProductDetail, []);
 
-  if (details === "") {
-    console.log("ciaooo");
-    navigate("/products");
-  }
-
   return (
     <>
       {isLoading ? (
