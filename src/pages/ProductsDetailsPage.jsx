@@ -48,14 +48,11 @@ export default function ProductsDetailsPage() {
             <h5 className="mt-4">{details.title}</h5>
             <p>{details.description}</p>
             <p>
-              <span className="badge text-bg-success fs-6">Rating: </span>
-              {" " + details.rating.rate}/5
+              <span className="badge rounded-pill text-bg-success fs-6">
+                Rating: {" " + details.rating.rate}/5
+              </span>
             </p>
-            <p>
-              {/* <span className="badge text-bg-dark fs-5"> */}
-              &euro;{details.price}
-              {/* </span> */}
-            </p>
+            <p>&euro;{details.price}</p>
           </div>
         </div>
       )}
