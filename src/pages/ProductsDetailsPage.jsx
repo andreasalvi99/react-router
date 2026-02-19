@@ -5,19 +5,30 @@ import { useParams } from "react-router-dom";
 export default function ProductsDetailsPage() {
   const { id } = useParams();
   const [details, setDetails] = useState([]);
+  const [errorAlert, setErrorAlert] = useState(false);
 
   const fetchProductDetail = () => {
-    axios.get(`https://fakestoreapi.com/products/${id}`).then((response) => {
-      setDetails(response.data);
-    });
+    axios
+      .get(`https://fakestoreapi.com/productsss/${id}`)
+      .then((response) => {
+        setDetails(response.data);
+      })
+      .catch((error) => {
+        setErrorAlert(true);
+      });
   };
 
   useEffect(fetchProductDetail, []);
 
-  if (!details) return <h1>Loading</h1>;
+  if (errorAlert)
+    return (
+      <div className="alert alert-danger" role="alert">
+        ciao
+      </div>
+    );
 
   return (
-    <div className="d-flex justify-content-around bg-white text-dark rounded">
+    <div className="d-flex justify-content-around bg-body-tertiary text-dark rounded">
       <figure className="p-4">
         <img src={details.image} alt={details.title} />
       </figure>
