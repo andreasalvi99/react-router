@@ -65,3 +65,8 @@ body::before {
   justify-content: center;
   align-items: center;
 }
+
+.bi {
+  height: 20px;
+  width: 20px;
+}
