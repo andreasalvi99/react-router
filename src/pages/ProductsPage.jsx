@@ -35,7 +35,11 @@ export default function Products() {
                 </div>
               </Link>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item">&euro; {product.price}</li>
+                <li className="list-group-item">
+                  <span className="badge text-bg-dark fs-6">
+                    &euro; {product.price}
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
