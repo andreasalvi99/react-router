@@ -18,10 +18,6 @@ export default function ProductsDetailsPage() {
       .catch((error) => {
         console.log(error.request.status);
 
-        if (error.request.status === 404) {
-          fallBack("/");
-        }
-
         setErrorAlert(true);
         setErrorMessage(error.message);
       });
