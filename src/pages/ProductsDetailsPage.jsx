@@ -6,6 +6,7 @@ export default function ProductsDetailsPage() {
   const { id } = useParams();
   const [details, setDetails] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const navigate = useNavigate();
 
   const fetchProductDetail = () => {
     axios.get(`https://fakestoreapi.com/products/${id}`).then((response) => {
@@ -15,6 +16,11 @@ export default function ProductsDetailsPage() {
   };
 
   useEffect(fetchProductDetail, []);
+
+  if (details === "") {
+    console.log("ciaooo");
+    navigate("/products");
+  }
 
   return (
     <>
