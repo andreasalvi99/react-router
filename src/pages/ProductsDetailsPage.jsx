@@ -24,9 +24,9 @@ export default function ProductsDetailsPage() {
 
   useEffect(fetchProductDetail, []);
 
-  if (errorAlert === true)
+  if (errorAlert)
     return (
-      <div class="alert alert-danger" role="alert">
+      <div className="alert alert-danger" role="alert">
         {errorInfo}
       </div>
     );
