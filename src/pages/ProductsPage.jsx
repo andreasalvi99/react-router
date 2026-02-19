@@ -7,14 +7,11 @@ export default function Products() {
 
   const fetchProducts = () => {
     axios.get("https://fakestoreapi.com/products").then((response) => {
-      console.log(response.data);
       setProducts(response.data);
     });
   };
 
-  useEffect(() => {
-    fetchProducts();
-  }, []);
+  useEffect(fetchProducts, []);
 
   return (
     <div className="row row-cols-5 g-0">
