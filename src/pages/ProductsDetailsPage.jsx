@@ -44,9 +44,18 @@ export default function ProductsDetailsPage() {
           <figure className="p-4">
             <img src={details.image} alt={details.title} />
           </figure>
-          <div className="align-self-star p-3">
+          <div className="align-self-center p-3">
             <h5 className="mt-4">{details.title}</h5>
             <p>{details.description}</p>
+            <p>
+              <span className="badge text-bg-success fs-6">Rating: </span>
+              {" " + details.rating.rate}/5
+            </p>
+            <p>
+              {/* <span className="badge text-bg-dark fs-5"> */}
+              &euro;{details.price}
+              {/* </span> */}
+            </p>
           </div>
         </div>
       )}
