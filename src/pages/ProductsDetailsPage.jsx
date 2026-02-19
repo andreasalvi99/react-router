@@ -6,16 +6,30 @@ export default function ProductsDetailsPage() {
   const { id } = useParams();
   const [details, setDetails] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const navigate = useNavigate();
+  const [errorAlert, setErrorAlert] = useState(false);
+  const [errorInfo, setErrorInfo] = useState();
 
   const fetchProductDetail = () => {
-    axios.get(`https://fakestoreapi.com/products/${id}`).then((response) => {
-      setIsLoading(false);
-      setDetails(response.data);
-    });
+    axios
+      .get(`https://fakestoreapi.com/products/${id}`)
+      .then((response) => {
+        setIsLoading(false);
+        setDetails(response.data);
+      })
+      .catch((error) => {
+        setErrorAlert(true);
+        setErrorInfo(error.message);
+      });
   };
 
   useEffect(fetchProductDetail, []);
+
+  if (errorAlert === true)
+    return (
+      <div class="alert alert-danger" role="alert">
+        {errorInfo}
+      </div>
+    );
 
   return (
     <>
